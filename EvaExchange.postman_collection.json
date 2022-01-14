@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "93995fd8-e9f9-4f52-9598-8aa6ddfb7c2f",
+		"name": "EvaExchange",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SELL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\":0,\n    \"quantity\":3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/shares/BTC/sell",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shares",
+						"BTC",
+						"sell"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BUY",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\":4,\n    \"quantity\":3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/shares/BTC/buy",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shares",
+						"BTC",
+						"buy"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

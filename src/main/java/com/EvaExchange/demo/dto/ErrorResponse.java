@@ -1,0 +1,24 @@
+package com.EvaExchange.demo.dto;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import lombok.Data;
+
+@Data()
+public class ErrorResponse {
+    private String message;
+    private List<String> subErrors = new ArrayList<>();
+
+    public ErrorResponse(String message) {
+        this.message = message;
+    }
+
+    public void addSubError(String err) {
+        subErrors.add(err);
+    }
+
+    public boolean hasError() {
+        return !subErrors.isEmpty();
+    }
+}
